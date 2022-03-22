@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 
 *{
 	font-family: 'Raleway', sans-serif;
@@ -137,14 +138,14 @@ body{
 }
 
 .hr{
-	height: 2px;
+	height: 1px;
 	background-color: #EFB810;
 }
 .novedades__titulo--xxl{
-	font-size: 3rem;
+	font-size: 5rem;
 }
 .novedades__titulo--xl{
-	font-size: 1em;
+	font-size: 2rem;
 }
 
 .tapaDisco{
@@ -284,18 +285,31 @@ body{
 
 }
 
-.scale:hover{
-	transform: scale(1.1);
-	cursor: pointer;
-	transition: transform 2s;
-}
-
 @keyframes textAlpha{
 	from{opacity: 0;}
 	to{opacity: 1;}
 }
 
-h2,h1,p{
+#caja1{
 	animation-name: textAlpha;
-	animation-duration: 4s;
+	animation-duration: 2s;
+}
+
+#caja2 {
+  animation-duration: 2s;
+  animation-name: slidein;
+
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
